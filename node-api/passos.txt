@@ -1,0 +1,45 @@
+- cria-se a pasta e usa: npm init -y
+- installa o npm install express
+- cria-se a api com o express e executa com node index.js
+- instala nodemon pra ele atualizar sozinho: npm install -D nodemon
+    - depois de instalar cria-se um script no package, "dev": "nodemon index.js"
+    - executa o nodemon pra rodar o servidor: npm run dev
+
+- instala o banco de dados nao relacional ORM: npm install mongoose
+- Eu utilizei aqui o MongoDB com o app mongoDB compass, então na hora de conectar eu só copiei o link de connect
+
+- Foi criado um model chamado product onde ficava basicamente todas as informaçoes necessarias na hora de criar um produto no banco de dados
+
+- É possivel que em uma aplicação maior precise utilizar vários models, então é bom utlizar uma biblioteca: 
+        npm install require-dir
+    que assim ele faz um require do diretorio em todos os arquivos automaticamente
+
+- Separa-se as pastas e arquivos na estrutura de dados padrão
+    * Routes.js - arquivo onde fica tds rotas da app
+    * controllers/          - É pra onde vai a logica que acontece em cada rota. Por exemplo ( contrllers/ProductController ): fica criação/remoção/alteração de um produto.
+
+- Cria todos os metodos necessarios nos controllers e arruma as rotas no routes.
+
+- app.use(express.json()): permite que seja possivel enviar dados pra aplicação no formato de json
+
+- Criando varios itens pode-se dividir uma pagina para que aja uma lista limitada na atual pagina
+    Entao usa-se: npm install mongoose-paginate
+
+- Para que seja possivel permitir acesso à api externamente, por outro dominio usa-se o CORS
+    npm install cors
+
+
+Métodos HTTP e equivalentes: {
+    Listagem: 
+        GET = index
+    Criação:
+        POST = store
+    Detalhes especificos:
+        GET = show
+    Modificação:
+        PUT = update
+    Remoção
+        DELETE = destroy
+    
+    
+}

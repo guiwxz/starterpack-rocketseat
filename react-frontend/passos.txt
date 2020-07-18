@@ -1,0 +1,30 @@
+- criado o projeto com o 
+    create-react-app frontend
+
+- deixa as pasta index e app apenas
+- cria uma pasta pros componentes
+- cria uma estilização global
+- installa axios pra pegar a api do backend 
+    yarn add axios
+- arquivo api.js e usa baseURL do localhost pra conectar a api
+
+- Cria a pasta pages e um arquivo pra cada pagina
+- Criado a pagina Main, feito a estilização e a navegação entre as demais paginas que exibem o resto dos produtos
+
+- Biblioteca para navegação entre as paginas (pagina Main e a pagina de detalhes dos itens por exemplo)
+    yarn add react-router-dom
+
+- Cria o arquivo routes.js que é onde vai ficar todas as rotas entre as paginas
+
+- Cria a segunda pagina, onde fica os detalhes do produto que foi clicado la no Main
+
+OBS: 
+    o index é o arquivo principal que carrega o APP. 
+    o APP é quem carrega todos componentes e paginas. 
+    Nas páginas ficam os import das api quando precisa buscar pra carrega o conteudo do backend.
+
+QUANDO USAR CLASS OU SINTAXE DE ARROW FUNCTION:
+    - classes e metodos sao criados quando é necessario utilizar variaveis de estado pra manipular os 
+    dados que possivelmente venham da api
+    - quando apenas é preciso criar um metodo que nao tenha state, pode ser usado arrow function
+
